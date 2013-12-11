@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C92558E718584F9D0038521F"
-               BuildableName = "libMDKit.a"
-               BlueprintName = "MDKit"
+               BlueprintIdentifier = "C9661F501858B5270083FF80"
+               BuildableName = "MDKit-Resources.bundle"
+               BlueprintName = "MDKit-Resources"
                ReferencedContainer = "container:MDKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,16 +28,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C92558F718584F9D0038521F"
-               BuildableName = "MDKitTests.xctest"
-               BlueprintName = "MDKitTests"
-               ReferencedContainer = "container:MDKit.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
