@@ -11,6 +11,10 @@
 @implementation NSError (MDKit)
 
 + (NSError *)descriptorErrorWithDomain:(NSString *)domain code:(NSInteger)code descriptor:(NSDictionary *)dict {
-    return [NSError errorWithDomain:domain code:code userInfo:@{NSLocalizedDescriptionKey:dict}];
+    NSDictionary *userInfo = nil;
+    if (dict) {
+        userInfo = @{NSLocalizedDescriptionKey: dict};
+    }
+    return [NSError errorWithDomain:domain code:code userInfo:userInfo];
 }
 @end
