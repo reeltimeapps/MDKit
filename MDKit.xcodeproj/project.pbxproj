@@ -60,6 +60,26 @@
 		C9661F5E1858B5450083FF80 /* MDLoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C925591318584FAB0038521F /* MDLoadingCell.xib */; };
 		C9661F651858BA7A0083FF80 /* NSBundle+MDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C9661F641858BA7A0083FF80 /* NSBundle+MDKit.m */; };
 		C9661F661858DC820083FF80 /* NSBundle+MDKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C9661F631858BA7A0083FF80 /* NSBundle+MDKit.h */; };
+		C96F5BDD185D84BF00D17C93 /* MDAssetsLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96F5BCC185D84BE00D17C93 /* MDAssetsLibraryViewController.m */; };
+		C96F5BDE185D84BF00D17C93 /* MDLibraryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C96F5BCE185D84BE00D17C93 /* MDLibraryCollectionViewCell.m */; };
+		C96F5BDF185D84BF00D17C93 /* MDAssetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96F5BD0185D84BE00D17C93 /* MDAssetViewController.m */; };
+		C96F5BE0185D84BF00D17C93 /* MDCameraSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = C96F5BD2185D84BF00D17C93 /* MDCameraSegue.m */; };
+		C96F5BE1185D84BF00D17C93 /* MDLibrarySegue.m in Sources */ = {isa = PBXBuildFile; fileRef = C96F5BD4185D84BF00D17C93 /* MDLibrarySegue.m */; };
+		C96F5BE2185D84BF00D17C93 /* MDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96F5BD6185D84BF00D17C93 /* MDNavigationController.m */; };
+		C96F5BE3185D84BF00D17C93 /* MDAssetsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C96F5BD8185D84BF00D17C93 /* MDAssetsManager.m */; };
+		C96F5BE4185D84BF00D17C93 /* MDAssetsGroupsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96F5BDA185D84BF00D17C93 /* MDAssetsGroupsViewController.m */; };
+		C96F5BE5185D84BF00D17C93 /* MDAssetsGroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C96F5BDC185D84BF00D17C93 /* MDAssetsGroupTableViewCell.m */; };
+		C96F5BE8185D84CC00D17C93 /* MDCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C96F5BE7185D84CC00D17C93 /* MDCaptureManager.m */; };
+		C96F5BE9185D84E800D17C93 /* MDAssetsLibraryViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C96F5BCB185D84BE00D17C93 /* MDAssetsLibraryViewController.h */; };
+		C96F5BEA185D84E800D17C93 /* MDLibraryCollectionViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C96F5BCD185D84BE00D17C93 /* MDLibraryCollectionViewCell.h */; };
+		C96F5BEB185D84E800D17C93 /* MDAssetViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C96F5BCF185D84BE00D17C93 /* MDAssetViewController.h */; };
+		C96F5BEC185D84E800D17C93 /* MDCameraSegue.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C96F5BD1185D84BE00D17C93 /* MDCameraSegue.h */; };
+		C96F5BED185D84E800D17C93 /* MDLibrarySegue.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C96F5BD3185D84BF00D17C93 /* MDLibrarySegue.h */; };
+		C96F5BEE185D84E800D17C93 /* MDNavigationController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C96F5BD5185D84BF00D17C93 /* MDNavigationController.h */; };
+		C96F5BEF185D84E800D17C93 /* MDAssetsManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C96F5BD7185D84BF00D17C93 /* MDAssetsManager.h */; };
+		C96F5BF0185D84E800D17C93 /* MDAssetsGroupsViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C96F5BD9185D84BF00D17C93 /* MDAssetsGroupsViewController.h */; };
+		C96F5BF1185D84E800D17C93 /* MDAssetsGroupTableViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C96F5BDB185D84BF00D17C93 /* MDAssetsGroupTableViewCell.h */; };
+		C96F5BF2185D84E800D17C93 /* MDCaptureManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C96F5BE6185D84CC00D17C93 /* MDCaptureManager.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +99,16 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				C96F5BE9185D84E800D17C93 /* MDAssetsLibraryViewController.h in CopyFiles */,
+				C96F5BEA185D84E800D17C93 /* MDLibraryCollectionViewCell.h in CopyFiles */,
+				C96F5BEB185D84E800D17C93 /* MDAssetViewController.h in CopyFiles */,
+				C96F5BEC185D84E800D17C93 /* MDCameraSegue.h in CopyFiles */,
+				C96F5BED185D84E800D17C93 /* MDLibrarySegue.h in CopyFiles */,
+				C96F5BEE185D84E800D17C93 /* MDNavigationController.h in CopyFiles */,
+				C96F5BEF185D84E800D17C93 /* MDAssetsManager.h in CopyFiles */,
+				C96F5BF0185D84E800D17C93 /* MDAssetsGroupsViewController.h in CopyFiles */,
+				C96F5BF1185D84E800D17C93 /* MDAssetsGroupTableViewCell.h in CopyFiles */,
+				C96F5BF2185D84E800D17C93 /* MDCaptureManager.h in CopyFiles */,
 				C9661F661858DC820083FF80 /* NSBundle+MDKit.h in CopyFiles */,
 				C92559531858511F0038521F /* MDMacros.h in CopyFiles */,
 				C92559541858511F0038521F /* MDInfiniteTableViewController.h in CopyFiles */,
@@ -163,6 +193,26 @@
 		C9661F5A1858B5270083FF80 /* MDKit-Resources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MDKit-Resources-Prefix.pch"; sourceTree = "<group>"; };
 		C9661F631858BA7A0083FF80 /* NSBundle+MDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+MDKit.h"; sourceTree = "<group>"; };
 		C9661F641858BA7A0083FF80 /* NSBundle+MDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+MDKit.m"; sourceTree = "<group>"; };
+		C96F5BCB185D84BE00D17C93 /* MDAssetsLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDAssetsLibraryViewController.h; sourceTree = "<group>"; };
+		C96F5BCC185D84BE00D17C93 /* MDAssetsLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDAssetsLibraryViewController.m; sourceTree = "<group>"; };
+		C96F5BCD185D84BE00D17C93 /* MDLibraryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDLibraryCollectionViewCell.h; sourceTree = "<group>"; };
+		C96F5BCE185D84BE00D17C93 /* MDLibraryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDLibraryCollectionViewCell.m; sourceTree = "<group>"; };
+		C96F5BCF185D84BE00D17C93 /* MDAssetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDAssetViewController.h; sourceTree = "<group>"; };
+		C96F5BD0185D84BE00D17C93 /* MDAssetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDAssetViewController.m; sourceTree = "<group>"; };
+		C96F5BD1185D84BE00D17C93 /* MDCameraSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCameraSegue.h; sourceTree = "<group>"; };
+		C96F5BD2185D84BF00D17C93 /* MDCameraSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCameraSegue.m; sourceTree = "<group>"; };
+		C96F5BD3185D84BF00D17C93 /* MDLibrarySegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDLibrarySegue.h; sourceTree = "<group>"; };
+		C96F5BD4185D84BF00D17C93 /* MDLibrarySegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDLibrarySegue.m; sourceTree = "<group>"; };
+		C96F5BD5185D84BF00D17C93 /* MDNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDNavigationController.h; sourceTree = "<group>"; };
+		C96F5BD6185D84BF00D17C93 /* MDNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDNavigationController.m; sourceTree = "<group>"; };
+		C96F5BD7185D84BF00D17C93 /* MDAssetsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDAssetsManager.h; sourceTree = "<group>"; };
+		C96F5BD8185D84BF00D17C93 /* MDAssetsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDAssetsManager.m; sourceTree = "<group>"; };
+		C96F5BD9185D84BF00D17C93 /* MDAssetsGroupsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDAssetsGroupsViewController.h; sourceTree = "<group>"; };
+		C96F5BDA185D84BF00D17C93 /* MDAssetsGroupsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDAssetsGroupsViewController.m; sourceTree = "<group>"; };
+		C96F5BDB185D84BF00D17C93 /* MDAssetsGroupTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDAssetsGroupTableViewCell.h; sourceTree = "<group>"; };
+		C96F5BDC185D84BF00D17C93 /* MDAssetsGroupTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDAssetsGroupTableViewCell.m; sourceTree = "<group>"; };
+		C96F5BE6185D84CC00D17C93 /* MDCaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCaptureManager.h; sourceTree = "<group>"; };
+		C96F5BE7185D84CC00D17C93 /* MDCaptureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCaptureManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +289,7 @@
 		C92558ED18584F9D0038521F /* MDKit */ = {
 			isa = PBXGroup;
 			children = (
+				C96F5BCA185D84AF00D17C93 /* Assets Library */,
 				C92558F018584F9D0038521F /* MDKit.h */,
 				C92558F218584F9D0038521F /* MDKit.m */,
 				C925594A18584FDD0038521F /* Classes */,
@@ -368,6 +419,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C96F5BCA185D84AF00D17C93 /* Assets Library */ = {
+			isa = PBXGroup;
+			children = (
+				C96F5BCB185D84BE00D17C93 /* MDAssetsLibraryViewController.h */,
+				C96F5BCC185D84BE00D17C93 /* MDAssetsLibraryViewController.m */,
+				C96F5BCD185D84BE00D17C93 /* MDLibraryCollectionViewCell.h */,
+				C96F5BCE185D84BE00D17C93 /* MDLibraryCollectionViewCell.m */,
+				C96F5BCF185D84BE00D17C93 /* MDAssetViewController.h */,
+				C96F5BD0185D84BE00D17C93 /* MDAssetViewController.m */,
+				C96F5BD1185D84BE00D17C93 /* MDCameraSegue.h */,
+				C96F5BD2185D84BF00D17C93 /* MDCameraSegue.m */,
+				C96F5BD3185D84BF00D17C93 /* MDLibrarySegue.h */,
+				C96F5BD4185D84BF00D17C93 /* MDLibrarySegue.m */,
+				C96F5BD5185D84BF00D17C93 /* MDNavigationController.h */,
+				C96F5BD6185D84BF00D17C93 /* MDNavigationController.m */,
+				C96F5BD7185D84BF00D17C93 /* MDAssetsManager.h */,
+				C96F5BD8185D84BF00D17C93 /* MDAssetsManager.m */,
+				C96F5BD9185D84BF00D17C93 /* MDAssetsGroupsViewController.h */,
+				C96F5BDA185D84BF00D17C93 /* MDAssetsGroupsViewController.m */,
+				C96F5BDB185D84BF00D17C93 /* MDAssetsGroupTableViewCell.h */,
+				C96F5BDC185D84BF00D17C93 /* MDAssetsGroupTableViewCell.m */,
+				C96F5BE6185D84CC00D17C93 /* MDCaptureManager.h */,
+				C96F5BE7185D84CC00D17C93 /* MDCaptureManager.m */,
+			);
+			name = "Assets Library";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -476,20 +554,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C96F5BDF185D84BF00D17C93 /* MDAssetViewController.m in Sources */,
 				C925593A18584FC00038521F /* NSString+Formatting.m in Sources */,
 				C92558F318584F9D0038521F /* MDKit.m in Sources */,
+				C96F5BDD185D84BF00D17C93 /* MDAssetsLibraryViewController.m in Sources */,
+				C96F5BDE185D84BF00D17C93 /* MDLibraryCollectionViewCell.m in Sources */,
 				C925593D18584FC00038521F /* UIScreen+Retina.m in Sources */,
 				C925594418584FC00038521F /* UIImage+Mask.m in Sources */,
+				C96F5BE3185D84BF00D17C93 /* MDAssetsManager.m in Sources */,
 				C925591918584FAB0038521F /* MDAlertView.m in Sources */,
+				C96F5BE8185D84CC00D17C93 /* MDCaptureManager.m in Sources */,
 				C925591818584FAB0038521F /* MDLoadingCell.m in Sources */,
+				C96F5BE2185D84BF00D17C93 /* MDNavigationController.m in Sources */,
 				C925593B18584FC00038521F /* UIImage+WBImage.m in Sources */,
+				C96F5BE0185D84BF00D17C93 /* MDCameraSegue.m in Sources */,
 				C925593E18584FC00038521F /* NSDate+Rails.m in Sources */,
 				C925593C18584FC00038521F /* NSDate+TimeAgo.m in Sources */,
+				C96F5BE5185D84BF00D17C93 /* MDAssetsGroupTableViewCell.m in Sources */,
+				C96F5BE4185D84BF00D17C93 /* MDAssetsGroupsViewController.m in Sources */,
 				C925592118584FB40038521F /* MDManagedObject.m in Sources */,
 				C925594318584FC00038521F /* NSError+MDKit.m in Sources */,
 				C925594018584FC00038521F /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				C925592018584FB40038521F /* MDInfiniteTableViewController.m in Sources */,
 				C925594518584FC00038521F /* ALAsset+UIImage.m in Sources */,
+				C96F5BE1185D84BF00D17C93 /* MDLibrarySegue.m in Sources */,
 				C9661F651858BA7A0083FF80 /* NSBundle+MDKit.m in Sources */,
 				C925594118584FC00038521F /* NSFetchRequest+Helpers.m in Sources */,
 				C925593F18584FC00038521F /* NSIndexPath+Touch.m in Sources */,

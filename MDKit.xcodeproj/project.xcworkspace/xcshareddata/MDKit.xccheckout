@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>47F274A9-5E43-44D1-B98A-4114C7E2A1E9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MDKit</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BF3DD2DA-02A6-46B4-8006-155415AFA28E</key>
+		<string>ssh://bitbucket.org/sixsidedstudio/mdkit.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MDKit.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BF3DD2DA-02A6-46B4-8006-155415AFA28E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://bitbucket.org/sixsidedstudio/mdkit.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BF3DD2DA-02A6-46B4-8006-155415AFA28E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BF3DD2DA-02A6-46B4-8006-155415AFA28E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MDKit</string>
+		</dict>
+	</array>
+</dict>
+</plist>
