@@ -12,6 +12,9 @@
 #import "MDLoadingCell.h"
 #import "MDAlertView.h"
 #import "MDHudView.h"
+#import "MDTransactionObserver.h"
+#import "MDBase64.h"
+
 #import "NSString+Formatting.h"
 #import "UIImage+Mask.h"
 #import "UIImage+WBImage.h"
