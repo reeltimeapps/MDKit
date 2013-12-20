@@ -19,9 +19,13 @@ typedef  NS_ENUM(NSInteger, MDPlayerState) {
 
 @interface MDPlayer : NSObject {
     NSInteger _index;
+    id _timeObserver;
+
 }
 
 @property (nonatomic, copy) void (^ didChangeState)(MDPlayerState state);
+@property (nonatomic, copy) void (^ didSetDuration)(Float64 duration);
+@property (nonatomic, copy) void (^ didChangeTime)(Float64 seconds);
 @property (strong, nonatomic) AVPlayer *player;
 @property (strong, nonatomic) AVPlayerItem *playerItem;
 @property (strong, nonatomic) AVPlayerLayer *playerLayer;
@@ -33,6 +37,7 @@ typedef  NS_ENUM(NSInteger, MDPlayerState) {
 
 - (void)play;
 - (void)pause;
+- (void)eject;
 - (void)fastForward;
 - (void)rewind;
 

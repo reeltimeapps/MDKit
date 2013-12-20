@@ -27,7 +27,7 @@ static const NSString *ItemStatusContext;
     return _sharedPlayer;
 }
 
-- (void)loadFile:(NSURL *)fileURL inView:(UIView *)view {
+- (void)loadFile:(NSURL *)fileURL inView:(MDPlayerView *)view {
     AVURLAsset *asset = [AVURLAsset URLAssetWithURL:fileURL options:nil];
     NSString *tracksKey = @"tracks";
     
@@ -64,8 +64,6 @@ static const NSString *ItemStatusContext;
                                                                                 object:self.playerItem];
                                      
                                      self.playerLayer = [AVPlayerLayer playerLayerWithPlayer:_player];
-                                     
-                                     _playerLayer.videoGravity = AVLayerVideoGravityResizeAspect;
                                      [_playerLayer setFrame:view.bounds];
                                      [view.layer addSublayer:_playerLayer];
                                      
@@ -87,11 +85,19 @@ static const NSString *ItemStatusContext;
 - (void)play {
     [_player play];
     self.currentState = MDPlayerStatePlaying;
+    [self initScrubberTimer];
+
 }
 
 - (void)pause {
     [_player pause];
     self.currentState = MDPlayerStatePaused;
+}
+
+- (void)eject {
+    [self stopTimeObserver];
+    [self removeObservers];
+    self.playerItem = nil;
 }
 
 - (void)fastForward {
@@ -103,10 +109,6 @@ static const NSString *ItemStatusContext;
 }
 
 #pragma mark - Private
-
-- (void)stop {
-    [self pause];
-}
 
 - (void)removeObservers {
     //Remove KVO observing of the default player item
@@ -122,6 +124,51 @@ static const NSString *ItemStatusContext;
     if (self.didChangeState) {
         self.didChangeState(state);
     }
+}
+
+- (void)initScrubberTimer {
+    if (!_timeObserver) {
+        CMTime duration = [self playerItemDuration];
+        if (CMTIME_IS_VALID(duration)) {
+            Float64 seconds = CMTimeGetSeconds(duration);
+            if (self.didSetDuration) {
+                self.didSetDuration(seconds);
+            }
+            if (isfinite(seconds)) {
+                __weak MDPlayer *weakSelf = self;
+                _timeObserver = [_player addPeriodicTimeObserverForInterval:CMTimeMakeWithSeconds(.1, NSEC_PER_SEC)
+                                                                       queue:NULL
+                                                                  usingBlock:^(CMTime time) {
+                                                                      [weakSelf syncScrubber];
+                                                                  }];
+            }
+        }
+    }
+}
+
+- (void)stopTimeObserver {
+	[_player removeTimeObserver:_timeObserver];
+	_timeObserver = nil;
+}
+
+- (CMTime)playerItemDuration {
+	AVPlayerItem *playerItem = [self.player currentItem];
+	if (playerItem.status == AVPlayerItemStatusReadyToPlay) {
+		return([playerItem duration]);
+	}
+	return(kCMTimeInvalid);
+}
+
+- (void)syncScrubber {
+    CMTime duration = [self playerItemDuration];
+	if (CMTIME_IS_VALID(duration)) {
+        Float64 seconds = CMTimeGetSeconds([_player currentTime]);
+        if (isfinite(seconds)) {
+            if (self.didChangeTime) {
+                self.didChangeTime(seconds);
+            }
+        }
+	}
 }
 
 #pragma mark - AVPlayerItemNotifications
@@ -143,10 +190,6 @@ static const NSString *ItemStatusContext;
     [super observeValueForKeyPath:keyPath ofObject:object
                            change:change context:context];
     return;
-}
-
-- (void)dealloc  {
-    [self removeObservers];
 }
 
 @end
