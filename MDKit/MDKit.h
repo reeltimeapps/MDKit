@@ -12,6 +12,10 @@
 #import "MDLoadingCell.h"
 #import "MDAlertView.h"
 #import "MDHudView.h"
+
+#import "MDPlayer.h"
+#import "MDPlayerView.h"
+
 #import "MDTransactionObserver.h"
 #import "MDBase64.h"
 
@@ -28,7 +32,3 @@
 #import "UIBarButtonItem+Custom.h"
 #import "NSError+MDKit.h"
 #import "NSBundle+MDKit.h"
-
-@interface MDKit : NSObject
-
-@end

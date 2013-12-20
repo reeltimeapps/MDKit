@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C92558EC18584F9D0038521F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92558EB18584F9D0038521F /* Foundation.framework */; };
 		C92558F118584F9D0038521F /* MDKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C92558F018584F9D0038521F /* MDKit.h */; };
-		C92558F318584F9D0038521F /* MDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C92558F218584F9D0038521F /* MDKit.m */; };
 		C92558FA18584F9D0038521F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92558F918584F9D0038521F /* XCTest.framework */; };
 		C92558FB18584F9D0038521F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92558EB18584F9D0038521F /* Foundation.framework */; };
 		C92558FD18584F9D0038521F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92558FC18584F9D0038521F /* UIKit.framework */; };
@@ -84,6 +83,10 @@
 		C96F5BF0185D84E800D17C93 /* MDAssetsGroupsViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C96F5BD9185D84BF00D17C93 /* MDAssetsGroupsViewController.h */; };
 		C96F5BF1185D84E800D17C93 /* MDAssetsGroupTableViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C96F5BDB185D84BF00D17C93 /* MDAssetsGroupTableViewCell.h */; };
 		C96F5BF2185D84E800D17C93 /* MDCaptureManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C96F5BE6185D84CC00D17C93 /* MDCaptureManager.h */; };
+		C9C43FF818649B850020829C /* MDPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C43FF718649B850020829C /* MDPlayerView.m */; };
+		C9C43FFF18649CD20020829C /* MDPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C43FFE18649CD20020829C /* MDPlayer.m */; };
+		C9C440001864A4030020829C /* MDPlayerView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C9C43FF618649B850020829C /* MDPlayerView.h */; };
+		C9C440011864A4030020829C /* MDPlayer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C9C43FFD18649CD20020829C /* MDPlayer.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +106,8 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				C9C440001864A4030020829C /* MDPlayerView.h in CopyFiles */,
+				C9C440011864A4030020829C /* MDPlayer.h in CopyFiles */,
 				C9395D39186423A0001D6496 /* MDTransactionObserver.h in CopyFiles */,
 				C9395D3A186423A0001D6496 /* MDBase64.h in CopyFiles */,
 				C96F5BE9185D84E800D17C93 /* MDAssetsLibraryViewController.h in CopyFiles */,
@@ -145,7 +150,6 @@
 		C92558EB18584F9D0038521F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C92558EF18584F9D0038521F /* MDKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MDKit-Prefix.pch"; sourceTree = "<group>"; };
 		C92558F018584F9D0038521F /* MDKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDKit.h; sourceTree = "<group>"; };
-		C92558F218584F9D0038521F /* MDKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDKit.m; sourceTree = "<group>"; };
 		C92558F818584F9D0038521F /* MDKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MDKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92558F918584F9D0038521F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C92558FC18584F9D0038521F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -223,6 +227,10 @@
 		C96F5BDC185D84BF00D17C93 /* MDAssetsGroupTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDAssetsGroupTableViewCell.m; sourceTree = "<group>"; };
 		C96F5BE6185D84CC00D17C93 /* MDCaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCaptureManager.h; sourceTree = "<group>"; };
 		C96F5BE7185D84CC00D17C93 /* MDCaptureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCaptureManager.m; sourceTree = "<group>"; };
+		C9C43FF618649B850020829C /* MDPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDPlayerView.h; sourceTree = "<group>"; };
+		C9C43FF718649B850020829C /* MDPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDPlayerView.m; sourceTree = "<group>"; };
+		C9C43FFD18649CD20020829C /* MDPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDPlayer.h; sourceTree = "<group>"; };
+		C9C43FFE18649CD20020829C /* MDPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDPlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,9 +307,12 @@
 		C92558ED18584F9D0038521F /* MDKit */ = {
 			isa = PBXGroup;
 			children = (
-				C96F5BCA185D84AF00D17C93 /* Assets Library */,
 				C92558F018584F9D0038521F /* MDKit.h */,
-				C92558F218584F9D0038521F /* MDKit.m */,
+				C9C43FF618649B850020829C /* MDPlayerView.h */,
+				C9C43FF718649B850020829C /* MDPlayerView.m */,
+				C9C43FFD18649CD20020829C /* MDPlayer.h */,
+				C9C43FFE18649CD20020829C /* MDPlayer.m */,
+				C96F5BCA185D84AF00D17C93 /* Assets Library */,
 				C925594A18584FDD0038521F /* Classes */,
 				C925594918584FD80038521F /* Controllers */,
 				C925594818584FD30038521F /* Models */,
@@ -570,7 +581,8 @@
 			files = (
 				C96F5BDF185D84BF00D17C93 /* MDAssetViewController.m in Sources */,
 				C925593A18584FC00038521F /* NSString+Formatting.m in Sources */,
-				C92558F318584F9D0038521F /* MDKit.m in Sources */,
+				C9C43FF818649B850020829C /* MDPlayerView.m in Sources */,
+				C9C43FFF18649CD20020829C /* MDPlayer.m in Sources */,
 				C96F5BDD185D84BF00D17C93 /* MDAssetsLibraryViewController.m in Sources */,
 				C9395D381864238F001D6496 /* MDBase64.m in Sources */,
 				C96F5BDE185D84BF00D17C93 /* MDLibraryCollectionViewCell.m in Sources */,
