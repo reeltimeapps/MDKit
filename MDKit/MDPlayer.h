@@ -30,10 +30,13 @@ typedef  NS_ENUM(NSInteger, MDPlayerState) {
 + (MDPlayer *)sharedPlayer;
 
 - (void)changePlayerState:(MDPlayerState)state;
+
+- (void)play;
+- (void)pause;
 - (void)fastForward;
 - (void)rewind;
 
-- (void)playFile:(NSURL *)fileURL inView:(MDPlayerView *)view;
+- (void)loadFile:(NSURL *)fileURL inView:(MDPlayerView *)view;
 - (void)changeVolume:(CGFloat)volume;
 
 @end

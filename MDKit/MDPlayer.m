@@ -27,7 +27,7 @@ static const NSString *ItemStatusContext;
     return _sharedPlayer;
 }
 
-- (void)playFile:(NSURL *)fileURL inView:(UIView *)view {
+- (void)loadFile:(NSURL *)fileURL inView:(UIView *)view {
     AVURLAsset *asset = [AVURLAsset URLAssetWithURL:fileURL options:nil];
     NSString *tracksKey = @"tracks";
     
@@ -69,7 +69,6 @@ static const NSString *ItemStatusContext;
                                      [_playerLayer setFrame:view.bounds];
                                      [view.layer addSublayer:_playerLayer];
                                      
-                                     [_player play];
                                      _index++;
                                      
                                  } else {
@@ -85,20 +84,14 @@ static const NSString *ItemStatusContext;
     _player.volume = volume;
 }
 
-- (void)changePlayerState:(MDPlayerState)state {
-    self.currentState = state;
-    switch (state) {
-        case MDPlayerStatePaused:
-            [_player pause];
-            break;
-        case MDPlayerStatePlaying:
-            [_player play];
-            break;
-        case MDPlayerStateFinished:
-            [self stop];
-        default:
-            break;
-    }
+- (void)play {
+    [_player play];
+    self.currentState = MDPlayerStatePlaying;
+}
+
+- (void)pause {
+    [_player pause];
+    self.currentState = MDPlayerStatePaused;
 }
 
 - (void)fastForward {
@@ -112,7 +105,7 @@ static const NSString *ItemStatusContext;
 #pragma mark - Private
 
 - (void)stop {
-    [_player pause];
+    [self pause];
 }
 
 - (void)removeObservers {
