@@ -88,7 +88,17 @@ static const NSString *ItemStatusContext;
 
 - (void)pause {
     [_player pause];
+    [self stopTimeObserver];
     self.currentState = MDPlayerStatePaused;
+}
+
+- (void)scrubStarted {
+    [self pause];
+}
+
+- (void)scrubbedToSecond:(Float64)second {
+    [_player seekToTime:CMTimeMakeWithSeconds(second, NSEC_PER_SEC) toleranceBefore:kCMTimeZero toleranceAfter:kCMTimeZero];
+    [self play];
 }
 
 - (void)eject {
@@ -98,11 +108,22 @@ static const NSString *ItemStatusContext;
 }
 
 - (void)fastForward {
-    
+    [self pause];
+    CGFloat seekSeconds = CMTimeGetSeconds(_player.currentTime) + 10;
+    CGFloat durationSeconds = CMTimeGetSeconds(_playerItem.duration);
+    if (seekSeconds <= durationSeconds - 10) {
+        CMTime newTime = CMTimeMakeWithSeconds(seekSeconds, _player.currentTime.timescale);
+       [_player seekToTime:newTime];
+    } else {
+        [_player seekToTime:_playerItem.duration toleranceBefore:kCMTimeZero toleranceAfter:kCMTimeZero];
+    }
+    [self play];
 }
 
 - (void)rewind {
-    
+    [self pause];
+    [_player seekToTime:CMTimeMakeWithSeconds(CMTimeGetSeconds(_player.currentTime) - 10, _player.currentTime.timescale)];
+    [self play];
 }
 
 #pragma mark - Private
@@ -144,8 +165,10 @@ static const NSString *ItemStatusContext;
 }
 
 - (void)stopTimeObserver {
-	[_player removeTimeObserver:_timeObserver];
-	_timeObserver = nil;
+    if (_timeObserver) {
+        [_player removeTimeObserver:_timeObserver];
+        _timeObserver = nil;
+    }
 }
 
 - (CMTime)playerItemDuration {
@@ -172,6 +195,7 @@ static const NSString *ItemStatusContext;
 
 - (void)playerItemDidReachEnd:(NSNotification *)notification {
     [self changeState:MDPlayerStateFinished];
+    [_player seekToTime:kCMTimeZero];
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object

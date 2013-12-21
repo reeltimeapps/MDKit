@@ -11,7 +11,6 @@
 		C92558F118584F9D0038521F /* MDKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C92558F018584F9D0038521F /* MDKit.h */; };
 		C92558FA18584F9D0038521F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92558F918584F9D0038521F /* XCTest.framework */; };
 		C92558FB18584F9D0038521F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92558EB18584F9D0038521F /* Foundation.framework */; };
-		C92558FD18584F9D0038521F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92558FC18584F9D0038521F /* UIKit.framework */; };
 		C925590018584F9D0038521F /* libMDKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C92558E818584F9D0038521F /* libMDKit.a */; };
 		C925590618584F9D0038521F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C925590418584F9D0038521F /* InfoPlist.strings */; };
 		C925590818584F9D0038521F /* MDKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C925590718584F9D0038521F /* MDKitTests.m */; };
@@ -152,7 +151,6 @@
 		C92558F018584F9D0038521F /* MDKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDKit.h; sourceTree = "<group>"; };
 		C92558F818584F9D0038521F /* MDKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MDKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92558F918584F9D0038521F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		C92558FC18584F9D0038521F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		C925590318584F9D0038521F /* MDKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MDKitTests-Info.plist"; sourceTree = "<group>"; };
 		C925590518584F9D0038521F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C925590718584F9D0038521F /* MDKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDKitTests.m; sourceTree = "<group>"; };
@@ -252,7 +250,6 @@
 			files = (
 				C92558FA18584F9D0038521F /* XCTest.framework in Frameworks */,
 				C925590018584F9D0038521F /* libMDKit.a in Frameworks */,
-				C92558FD18584F9D0038521F /* UIKit.framework in Frameworks */,
 				C92558FB18584F9D0038521F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,7 +295,6 @@
 				C925594B185850000038521F /* UIKit.framework */,
 				C92558EB18584F9D0038521F /* Foundation.framework */,
 				C92558F918584F9D0038521F /* XCTest.framework */,
-				C92558FC18584F9D0038521F /* UIKit.framework */,
 				C9661F521858B5270083FF80 /* CoreFoundation.framework */,
 			);
 			name = Frameworks;

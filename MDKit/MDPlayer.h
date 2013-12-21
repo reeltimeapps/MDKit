@@ -41,7 +41,8 @@ typedef  NS_ENUM(NSInteger, MDPlayerState) {
 - (void)eject;
 - (void)fastForward;
 - (void)rewind;
-
+- (void)scrubStarted;
+- (void)scrubbedToSecond:(Float64)second;
 - (void)loadFile:(NSURL *)fileURL inView:(MDPlayerView *)view;
 - (void)changeVolume:(CGFloat)volume;
 
