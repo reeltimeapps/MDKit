@@ -11,7 +11,7 @@
 
 @interface MDPlayerView : UIView
 
-@property (nonatomic, retain) AVPlayer *player;
+@property (nonatomic) AVPlayer *player;
 
 - (void)setVideoGravityMode:(NSString *)gravityMode;
 

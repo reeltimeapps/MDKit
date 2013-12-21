@@ -63,10 +63,7 @@ static const NSString *ItemStatusContext;
                                                                                   name:AVPlayerItemDidPlayToEndTimeNotification
                                                                                 object:self.playerItem];
                                      
-                                     self.playerLayer = [AVPlayerLayer playerLayerWithPlayer:_player];
-                                     [_playerLayer setFrame:view.bounds];
-                                     [view.layer addSublayer:_playerLayer];
-                                     
+                                     [view setPlayer:self.player];
                                      _index++;
                                      
                                  } else {
