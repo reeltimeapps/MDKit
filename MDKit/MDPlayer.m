@@ -62,7 +62,7 @@ static const NSString *ItemStatusContext;
                                                                               selector:@selector(playerItemDidReachEnd:)
                                                                                   name:AVPlayerItemDidPlayToEndTimeNotification
                                                                                 object:self.playerItem];
-                                     
+                                     _player.volume = _volume;
                                      [view setPlayer:self.player];
                                      _index++;
                                      
@@ -70,13 +70,13 @@ static const NSString *ItemStatusContext;
                                      //Error
                                      NSLog(@"error: %@", error);
                                  }
-                                 
                              });
                          }];
 }
 
 - (void)changeVolume:(CGFloat)volume {
-    _player.volume = volume;
+    self.volume = volume;
+    _player.volume = _volume;
 }
 
 - (void)play {

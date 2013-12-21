@@ -29,6 +29,7 @@ typedef  NS_ENUM(NSInteger, MDPlayerState) {
 @property (strong, nonatomic) AVPlayer *player;
 @property (strong, nonatomic) AVPlayerItem *playerItem;
 @property (strong, nonatomic) AVPlayerLayer *playerLayer;
+@property (nonatomic) CGFloat volume;
 @property (nonatomic) MDPlayerState currentState;
 
 + (MDPlayer *)sharedPlayer;
