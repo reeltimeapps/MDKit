@@ -62,7 +62,6 @@ static const NSString *ItemStatusContext;
                                                                               selector:@selector(playerItemDidReachEnd:)
                                                                                   name:AVPlayerItemDidPlayToEndTimeNotification
                                                                                 object:self.playerItem];
-                                     _player.volume = _volume;
                                      [view setPlayer:self.player];
                                      _index++;
                                      
