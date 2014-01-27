@@ -46,7 +46,7 @@ NSLocalizedStringFromTable(key, @"NSDateTimeAgo", nil)
     } else if (deltaMinutes < (24 * 60 * 61)) {
         return NSDateTimeAgoLocalizedStrings(@"1mo");
     } else if (deltaMinutes < (24 * 60 * 365.25)) {
-        return [NSString stringWithFormat:NSDateTimeAgoLocalizedStrings(@"%dmos"), (int)floor(deltaMinutes/(60 * 24 * 30))];
+        return [NSString stringWithFormat:NSDateTimeAgoLocalizedStrings(@"%dmo"), (int)floor(deltaMinutes/(60 * 24 * 30))];
     } else if (deltaMinutes < (24 * 60 * 731)) {
         return NSDateTimeAgoLocalizedStrings(@"1y");
     }

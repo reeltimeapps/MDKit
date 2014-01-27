@@ -20,8 +20,6 @@
 - (id)initWithStyle:(UITableViewStyle)style {
     self = [super initWithStyle:style];
     if (self) {
-        self.tableView.backgroundView = nil;
-        self.tableView.backgroundColor = [UIColor clearColor];
         self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     }
     return self;
@@ -76,6 +74,11 @@
     if (self.tableData == nil) {
         self.tableData = [tableData mutableCopy];
         [self.tableView reloadData];
+        if (self.tableData.count > 0) {
+            [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]
+                                  atScrollPosition:UITableViewScrollPositionTop
+                                          animated:NO];
+        }
     } else {
         NSArray *indexPaths =[self indexPathsToReload:self.tableData.count count:tableData.count];
         [self.tableData addObjectsFromArray:tableData];
