@@ -110,7 +110,7 @@ static const NSString *ItemStatusContext;
     [self pause];
     CGFloat seekSeconds = CMTimeGetSeconds(_player.currentTime) + 10;
     CGFloat durationSeconds = CMTimeGetSeconds(_playerItem.duration);
-    if (seekSeconds <= durationSeconds - 10) {
+    if (seekSeconds < durationSeconds - 10) {
         CMTime newTime = CMTimeMakeWithSeconds(seekSeconds, _player.currentTime.timescale);
        [_player seekToTime:newTime];
     } else {
