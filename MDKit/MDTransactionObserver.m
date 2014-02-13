@@ -160,6 +160,7 @@
     for (SKDownload *download in downloads) {
         switch (download.downloadState) {
             case SKDownloadStateWaiting:
+                break;
             case SKDownloadStateActive:
                 [self changedTransactionDownloadState:MDPaymentTransactionStateDownloading download:download];
                 break;
