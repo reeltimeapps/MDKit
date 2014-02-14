@@ -28,9 +28,17 @@ static const NSString *ItemStatusContext;
 }
 
 - (void)loadFile:(NSURL *)fileURL inView:(MDPlayerView *)view {
+
     AVURLAsset *asset = [AVURLAsset URLAssetWithURL:fileURL options:nil];
-    NSString *tracksKey = @"tracks";
     
+    if (_player) {
+        AVPlayerItem *playerItem = [AVPlayerItem playerItemWithAsset:asset];
+        [_player replaceCurrentItemWithPlayerItem:playerItem];
+        [view setPlayer:_player];
+        return;
+    }
+    
+    NSString *tracksKey = @"tracks";
     [asset loadValuesAsynchronouslyForKeys:[NSArray arrayWithObject:tracksKey]
                          completionHandler:^{
                              
@@ -63,7 +71,6 @@ static const NSString *ItemStatusContext;
                                                                                   name:AVPlayerItemDidPlayToEndTimeNotification
                                                                                 object:self.playerItem];
                                      [view setPlayer:self.player];
-                                     _index++;
                                      
                                  } else {
                                      //Error

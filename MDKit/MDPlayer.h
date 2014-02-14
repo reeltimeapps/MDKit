@@ -34,8 +34,6 @@ typedef  NS_ENUM(NSInteger, MDPlayerState) {
 
 + (MDPlayer *)sharedPlayer;
 
-- (void)changePlayerState:(MDPlayerState)state;
-
 - (void)play;
 - (void)pause;
 - (void)eject;
