@@ -63,8 +63,7 @@
 - (void)checkForData:(NSArray *)tableData {
     [self hideRefresh];
     if ([tableData count] == 0) {
-        self.paging = NO;
-        [self.loadingCell.activityIndicator stopAnimating];
+        [self tableViewDidStopPaging];
         return;
     }
     self.paging = YES;
@@ -95,6 +94,11 @@
         [_loadingCell.activityIndicator startAnimating];
     }
     return _loadingCell;
+}
+
+- (void)tableViewDidStopPaging {
+    self.paging = NO;
+    [self.loadingCell.activityIndicator stopAnimating];
 }
 
 #pragma mark - Private

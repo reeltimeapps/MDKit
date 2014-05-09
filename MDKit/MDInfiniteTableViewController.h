@@ -61,6 +61,9 @@ static NSString *MDLoadingCellIdentifier = @"MDLoadingCell";
 //Called when needing to reset the tableview to default state.
 - (void)reset;
 
+//Called when paging stops
+- (void)tableViewDidStopPaging;
+
 //Return a loading cell at supplied indexPath.
 - (MDLoadingCell *)loadingCellAtIndexPath:(NSIndexPath *)indexPath;
 
