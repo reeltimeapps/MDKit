@@ -82,7 +82,7 @@
         NSArray *indexPaths =[self indexPathsToReload:self.tableData.count count:tableData.count];
         if (indexPaths.count > 0) {
             [self.tableData addObjectsFromArray:tableData];
-            [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationFade];
+            [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationNone];
 
         }
     }
