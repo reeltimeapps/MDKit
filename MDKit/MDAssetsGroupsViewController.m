@@ -93,7 +93,7 @@ static NSString *MDAssetsGroupTableViewCellIdentifier = @"MDAssetsGroupTableView
     
     cell.coverImageView.image = [UIImage imageWithCGImage:group.posterImage];
     cell.titleLabel.text = [group valueForProperty:ALAssetsGroupPropertyName];
-    cell.subtitleLabel.text = [NSString stringWithFormat:@"%i photos", group.numberOfAssets];
+    cell.subtitleLabel.text = [NSString stringWithFormat:@"%li photos", (long)group.numberOfAssets];
     return cell;
 }
 

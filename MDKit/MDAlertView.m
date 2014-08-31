@@ -75,11 +75,9 @@
 
 
 - (CGFloat)calculateLabelWidth:(UILabel *)label {
-    CGSize constraint = CGSizeMake(300, 20000.0f);
-    CGSize size = [label.text sizeWithFont:label.font
-                         constrainedToSize:constraint
-                             lineBreakMode:NSLineBreakByTruncatingTail];
-    return size.width;
+    CGSize maximumLabelSize = CGSizeMake(300, 20000.0f);
+    
+    return [label sizeThatFits:maximumLabelSize].width;
 }
 
 @end

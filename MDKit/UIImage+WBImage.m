@@ -6,7 +6,7 @@
 @implementation UIImage (WBImage)
 
 + (UIImage *)rotate:(UIImage *)image scale:(NSInteger)scale {
-    int kMaxResolution = scale; // Or whatever
+    NSInteger kMaxResolution = scale; // Or whatever
     
     CGImageRef imgRef = image.CGImage;
     
