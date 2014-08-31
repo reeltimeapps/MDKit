@@ -1,9 +1,9 @@
 //
 //  MDAssetsGroupsViewController.m
-//  Slide
+//   MDKit
 //
 //  Created by Matthew Dicembrino on 12/12/13.
-//  Copyright (c) 2013 Blue Whale Inc. All rights reserved.
+//  Copyright (c) 2014 Six Sided Studio. All rights reserved.
 //
 
 #import "MDAssetsGroupsViewController.h"

@@ -1,9 +1,9 @@
 //
 //  MDCameraSegue.m
-//  SliideApp
+//  MDKit
 //
 //  Created by Matthew Dicembrino on 8/22/13.
-//  Copyright (c) 2013 Blue Whale Inc. All rights reserved.
+//  Copyright (c) 2014 Six Sided Studio. All rights reserved.
 //
 
 #import "MDCameraSegue.h"

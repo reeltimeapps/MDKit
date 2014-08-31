@@ -1,9 +1,9 @@
 //
 //  NSString+Formatting.h
-//  BlackPlanet
+//   MDKit
 //
 //  Created by Matthew Dicembrino on 11/1/12.
-//  Copyright (c) 2012 Blue Whale. All rights reserved.
+//  Copyright (c) 2014 Six Sided Studio. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
